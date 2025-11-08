@@ -31,5 +31,5 @@ make run
 ```
 
 **Демонстрационный проект:**
-
+![demo](https://github.com/F-Jahura/y_lab/blob/main/assets/demo.gif)
 
