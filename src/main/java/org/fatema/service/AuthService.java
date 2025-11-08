@@ -8,8 +8,8 @@ public class AuthService {
     private String currentUser = null;
 
     public AuthService() {
-        users.put("admin", "password");
-        users.put("root", "qwerty");
+        users.put("admin", "admin");
+        users.put("root", "root");
     }
 
     public boolean login(String username, String password) {

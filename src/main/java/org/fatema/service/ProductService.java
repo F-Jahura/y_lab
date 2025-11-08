@@ -3,7 +3,13 @@ package org.fatema.service;
 import org.fatema.model.Product;
 import org.fatema.repository.ProductRepository;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.TreeMap;
+import java.util.NavigableMap;
+import java.util.ArrayList;
+import java.util.Collections;
 
 
 public class ProductService {
