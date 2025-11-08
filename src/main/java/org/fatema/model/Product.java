@@ -2,11 +2,20 @@ package org.fatema.model;
 
 public class Product {
     private Long id;
-    private String title;
-    private int price;
+    private String name;
+    private double price;
     private String category;
     private String brand;
     private String description;
+
+    public Product(Long id, String title, double price, String category, String brand, String description) {
+        this.id = id;
+        this.name = title;
+        this.price = price;
+        this.category = category;
+        this.brand = brand;
+        this.description = description;
+    }
 
     public Long getId() {
         return id;
@@ -16,19 +25,19 @@ public class Product {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -60,7 +69,7 @@ public class Product {
     public String toString() {
         return "Product{" +
                 "id=" + id +
-                ", title='" + title + '\'' +
+                ", title='" + name + '\'' +
                 ", price=" + price +
                 ", category='" + category + '\'' +
                 ", brand='" + brand + '\'' +

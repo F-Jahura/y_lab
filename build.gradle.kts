@@ -1,5 +1,5 @@
 plugins {
-    id("java")
+    application
 }
 
 group = "org.fatema"
@@ -9,6 +9,11 @@ repositories {
     mavenCentral()
 }
 
+application {
+    // Входная точка
+    mainClass.set("org.fatema.Main")
+}
+
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
@@ -16,4 +21,10 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.jar {
+    manifest {
+        attributes["Main-Class"] = "org.fatema.Main"
+    }
 }
