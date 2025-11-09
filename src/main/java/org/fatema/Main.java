@@ -109,8 +109,10 @@ public class Main {
                 case FIND_PRODUCT_PRICE:
                     System.out.println("Input min price: ");
                     double minPrice = scanner.nextDouble();
+                    scanner.nextLine();
                     System.out.println("Input max price: ");
                     double maxPrice = scanner.nextDouble();
+                    scanner.nextLine();
                     List<Product> products3 = service.findByPriceRange(minPrice, maxPrice);
                     ProductUtils.printProducts(products3);
                     break;
